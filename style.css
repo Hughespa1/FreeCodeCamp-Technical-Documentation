@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-doc {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+#navbar {
+  background-color: green;
+  flex: 1;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  display: block;
+  padding: 10px 10px 0 10px;
+  font-size: 1.4em;
+}
+
+#content {
+  flex: 3;
+}
+
+@media (max-width: 768px) {
+  #navbar a {
+    font-size: 1em;
+  }
+}
